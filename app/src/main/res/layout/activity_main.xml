@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edittext"
+        android:textAlignment="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:hint="Imie i nazwisko"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_below="@id/edittext"
+        android:layout_width="match_parent"
+        android:valueFrom="1"
+        android:stepSize="1"
+        android:valueTo="5"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slider"
+        android:text="Klawiatura"
+        />
+
+
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkbox1"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2"
+        android:text="Myszka"
+        />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkbox2"
+        />
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner3"
+        android:text="Kamerka internetowa"
+        />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkbox3"
+        />
+
+    <Button
+        android:layout_below="@id/spinner4"
+        android:id="@+id/button_cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oblicz cene" />
+
+    <TextView
+        android:layout_below="@+id/button_cena"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cenazamowienia"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:layout_below="@+id/button_cena"
+        android:id="@+id/cenazamowienia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cena twojego zamówienia (w złotkówkach) wynosi: " />
+
+
+</RelativeLayout>
